@@ -5,6 +5,8 @@ ls
 python3 --version
 python3 -m venv venv
 source venv/bin/activate
+-m pip install --upgrade pip
+pip install flask
 python -m pip install -r transport-management/backend/requirements.txt
 
 echo "Starting backend..."
