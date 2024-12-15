@@ -28,6 +28,7 @@ pwd
 echo "######################################## 5 ########################################"
 echo "Starting frontend..."
 npm install
+npm audit fix --force
 npm start &
 
 wait
