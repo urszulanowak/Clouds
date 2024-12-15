@@ -2,6 +2,8 @@
 pwd
 ls
 # /opt/render/project/src/
+echo "Install flask"
+pip install flask
 echo "Starting backend..."
 python3 transport-management/backend/app.py &
 
