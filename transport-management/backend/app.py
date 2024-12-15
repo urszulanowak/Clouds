@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS 
 from database import get_driver
+import os
 
 app = Flask(__name__)
 CORS(app, origins=["http://localhost:3000"])
@@ -164,4 +165,5 @@ def delete_route():
 
 if __name__ == "__main__":
     initialize_db() 
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(debug=True, host='0.0.0.0', port=port)
