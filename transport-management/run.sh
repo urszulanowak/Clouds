@@ -1,6 +1,8 @@
 #!/bin/bash
 pwd
 ls
+
+# set -e
 # /opt/render/project/src/
 echo "######################################## 1 ########################################"
 python3 --version
@@ -25,6 +27,7 @@ ls
 pwd
 echo "######################################## 5 ########################################"
 echo "Starting frontend..."
+npm install
 npm start &
 
 wait
