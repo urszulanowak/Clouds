@@ -1,5 +1,5 @@
 #!/bin/bash
-
+pwd
 echo "Starting backend..."
 python3 backend/app.py &
 
