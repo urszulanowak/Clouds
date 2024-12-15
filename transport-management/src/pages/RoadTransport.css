@@ -1,0 +1,199 @@
+.road-transport-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .cities-container {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  
+  .header-bar {
+    background-color: #6383a5;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .header-bar h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .cities-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .city-card {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    text-align: center;
+    width: 120px;
+    transition: transform 0.2s ease;
+  }
+  
+  .city-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .city-name {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .add-city-container {
+    width: 80%;
+  }
+  
+  .add-city-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-city-header {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .add-city-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .city-input {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 250px;
+    font-size: 14px;
+  }
+  
+  .add-city-button {
+    padding: 8px 15px;
+    background-color: #04376e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .add-city-button:hover {
+    background-color: #37516d;
+  }
+  
+.routes-container {
+    width: 80%;
+    margin-top: 30px;
+  }
+  
+  .routes-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .route-card {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  
+  .route-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .route-card.active {
+    background-color: #d4e9f9;
+    border-color: #64a1d6;
+  }
+  
+  
+  .route-card span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .add-route-container {
+    width: 80%;
+  }
+  
+  .add-route-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-top: 25px;
+  }
+
+  .add-route-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .add-route-form select,
+  .add-route-form input {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .add-route-form button {
+    padding: 8px 15px;
+    background-color: #04376e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .delete-route-button {
+    background-color: #f1a2a2;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 5px 5px;
+    margin-top: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .delete-route-button:hover {
+    background-color: #f04848;
+  }
+  
+  
