@@ -19,7 +19,7 @@ python -m pip install --use-pep517 gunicorn
 
 echo "######################################## 3 ########################################"
 echo "Starting Flask backend..."
-gunicorn -w 1 -b 0.0.0.0:5000 app:app &
+gunicorn -w 1 -b 0.0.0.0:5000 transport-management.backend.app:app &
 FLASK_PID=$!
 echo "Flask backend running with PID $FLASK_PID"
 
