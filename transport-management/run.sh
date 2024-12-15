@@ -3,7 +3,7 @@ pwd
 ls
 # /opt/render/project/src/
 python3 --version
-python3.10.12 -m venv venv
+python3 -m venv venv
 source venv/bin/activate
 python -m pip install -r transport-management/backend/requirements.txt
 
