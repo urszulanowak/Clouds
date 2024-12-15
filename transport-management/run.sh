@@ -6,12 +6,12 @@ python3 --version
 python3 -m venv venv
 source venv/bin/activate
 python --version
-python -m pip install wheel
-python -m pip install --upgrade pip setuptools wheel
-python -m pip install --upgrade pip
-python -m pip install --use-pep517
-python -m pip install flask
-python -m pip install -r transport-management/backend/requirements.txt
+python -m pip install --use-pep517 wheel
+python -m pip install --use-pep517 neo4j
+python -m pip install --use-pep517 Flask
+python -m pip install --use-pep517 flask_cors
+python -m pip install --use-pep517 dotenv
+
 
 echo "Starting backend..."
 python transport-management/backend/app.py &
