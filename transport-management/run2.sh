@@ -15,17 +15,10 @@ python -m pip install --use-pep517 neo4j
 python -m pip install --use-pep517 Flask
 python -m pip install --use-pep517 flask_cors
 python -m pip install --use-pep517 python-dotenv
-python -m pip install --use-pep517 gunicorn
 
 echo "######################################## 3 ########################################"
-echo "Starting Flask backend..."
-gunicorn -w 1 -b 0.0.0.0:5000 app:app &
-FLASK_PID=$!
-echo "Flask backend running with PID $FLASK_PID"
-
-
-
-
+echo "Starting backend..."
+python transport-management/backend/app.py &
 
 echo "######################################## 4 ########################################"
 cd transport-management
@@ -35,11 +28,7 @@ pwd
 echo "######################################## 5 ########################################"
 echo "Starting frontend..."
 npm install
-# npm audit fix --force
-npm start --prefix frontend/ &
-REACT_PID=$!
-echo "React frontend running with PID $REACT_PID"
+npm audit fix --force
+npm start &
 
-# echo "Press [CTRL+C] to stop both servers."
-# trap "kill $FLASK_PID $REACT_PID" SIGINT
 wait
