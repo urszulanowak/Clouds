@@ -2,9 +2,13 @@
 pwd
 ls
 # /opt/render/project/src/
-pip install -r backend/requirements.txt
+
+python3 -m venv venv
+source venv/bin/activate
+python -m pip install -r transport-management/backend/requirements.txt
+
 echo "Starting backend..."
-python3 transport-management/backend/app.py &
+python transport-management/backend/app.py &
 
 cd transport-management
 echo "transport management dir:"
