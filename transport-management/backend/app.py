@@ -4,8 +4,8 @@ from database import get_driver
 import os
 
 app = Flask(__name__)
-# CORS(app, origins="*")
-CORS(app, resources={r"/*": {"origins": ["http://localhost:3000", "https://clouds-3.onrender.com/"]}})
+CORS(app, origins="*")
+# CORS(app, resources={r"/*": {"origins": ["http://localhost:3000", "https://clouds-3.onrender.com/"]}})
 driver = get_driver()
 
 def initialize_db():
@@ -166,5 +166,5 @@ def delete_route():
 
 if __name__ == "__main__":
     initialize_db() 
-    port = int(os.environ.get('PORT', 10000))
+    port = int(os.environ.get('PORT', 5000))
     app.run(debug=True, host='0.0.0.0', port=port)
